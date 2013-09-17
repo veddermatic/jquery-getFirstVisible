@@ -1,4 +1,4 @@
-jquery.getVirstVisible
+jquery.getFirstVisible
 ===
 by Dave Vedder
 

@@ -1,0 +1,6 @@
+syntax: glob
+git
+.git
+.gitignore
+*.swp
+.DS_Store

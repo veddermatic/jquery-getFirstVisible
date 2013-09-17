@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jQuery getFirstVisible plugin</title> 
+<style type="text/css" media="screen"> 
+    body { 
+        font-family: helvetica; 
+        font-size: 100%; 
+        max-width: 640px;
+        min-width: 300px;
+        margin: 12px auto;
+    }
+    pre,code { font-size: 14px; }
+    div {
+        padding: 8px;
+        border-bottom: 4px double #ccc;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .topElement { background-color: #ccccc0; }
+</style> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script> 
+<script src="jquery.getFirstVisible.min.js" type="text/javascript"></script> 
+<script type="text/javascript" charset="utf-8"> 
+jQuery( function(){
+        jQuery().getFirstVisible({
+            watchSelector: '.watchMe div',
+            showRatio: 0.25,
+            callback: function(oldTop, newTop) {
+                oldTop.find('.Hay').remove();
+                newTop.prepend('<h2 class="Hay">Oh Hay!</h2>');
+            }
+        });
+});
+ 
+</script> 
+</head> 
+<body> 
+<section class="watchMe">
+    <h1>First Visible Test Page</h1>
+    <div> 
+        <h3>First Div</h3>
+        <p> 
+            This page is using:
+        </p>
+        <pre>
+        jQuery().getFirstVisible({
+            watchSelector: '.watchMe div',
+            showRatio: 0.25,
+            callback: function(oldTop, newTop) {
+                oldTop.find('.Hay').remove();
+                newTop.prepend('&lt;h2 class="Hay"&gt;Oh Hay!&lt;/h2&gt;');
+            }
+        });
+        </pre>
+     </div> 
+    <div>
+        <p>Nam pulvinar, orci quis dignissim venenatis, ligula tellus elementum lorem, ut porttitor tortor orci vel mi. Aenean facilisis sollicitudin dolor ut lacinia. Sed vitae auctor lorem, eget vehicula eros. Suspendisse hendrerit nunc eget posuere condimentum.</p><p> Nunc justo nibh, elementum sit amet augue ac, ullamcorper facilisis ipsum. Nulla rhoncus, risus vulputate rutrum vestibulum, nibh leo pulvinar nibh, eget dignissim libero augue id est.</p>  </div> 
+    <div>
+        <h3>Etiam mauris sem</h3>
+        <p>
+        Vestibulum venenatis vestibulum consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed consectetur velit varius lacinia ullamcorper. Curabitur luctus commodo molestie. Vestibulum in volutpat purus. Fusce nisl dolor, dignissim sodales dui eu, placerat venenatis elit. Etiam mauris sem, accumsan non nulla a, sodales interdum nunc. Etiam auctor pulvinar justo, eget ultrices tortor venenatis vel. 
+        </p>
+    </div>
+    <div>
+        <p>Nam pulvinar, orci quis dignissim venenatis, ligula tellus elementum lorem, ut porttitor tortor orci vel mi. Aenean facilisis sollicitudin dolor ut lacinia. Sed vitae auctor lorem, eget vehicula eros. Suspendisse hendrerit nunc eget posuere condimentum.</p><p> Nunc justo nibh, elementum sit amet augue ac, ullamcorper facilisis ipsum. Nulla rhoncus, risus vulputate rutrum vestibulum, nibh leo pulvinar nibh, eget dignissim libero augue id est.</p>  </div> 
+    <div>
+        <h3>Etiam mauris sem</h3>
+        <p>
+        Vestibulum venenatis vestibulum consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed consectetur velit varius lacinia ullamcorper. Curabitur luctus commodo molestie. Vestibulum in volutpat purus. Fusce nisl dolor, dignissim sodales dui eu, placerat venenatis elit. Etiam mauris sem, accumsan non nulla a, sodales interdum nunc. Etiam auctor pulvinar justo, eget ultrices tortor venenatis vel. 
+        </p>
+    </div>
+    <div>
+        <p>Nam pulvinar, orci quis dignissim venenatis, ligula tellus elementum lorem, ut porttitor tortor orci vel mi. Aenean facilisis sollicitudin dolor ut lacinia. Sed vitae auctor lorem, eget vehicula eros. Suspendisse hendrerit nunc eget posuere condimentum.</p><p> Nunc justo nibh, elementum sit amet augue ac, ullamcorper facilisis ipsum. Nulla rhoncus, risus vulputate rutrum vestibulum, nibh leo pulvinar nibh, eget dignissim libero augue id est.</p>  </div> 
+    <div>
+        <p>
+        Vestibulum venenatis vestibulum consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed consectetur velit varius lacinia ullamcorper. Curabitur luctus commodo molestie. Vestibulum in volutpat purus. Fusce nisl dolor, dignissim sodales dui eu, placerat venenatis elit. Etiam mauris sem, accumsan non nulla a, sodales interdum nunc. Etiam auctor pulvinar justo, eget ultrices tortor venenatis vel. 
+        </p>
+    </div>
+    <div>
+        <h3>Etiam mauris sem</h3>
+        <p>Nam pulvinar, orci quis dignissim venenatis, ligula tellus elementum lorem, ut porttitor tortor orci vel mi. Aenean facilisis sollicitudin dolor ut lacinia. Sed vitae auctor lorem, eget vehicula eros. Suspendisse hendrerit nunc eget posuere condimentum.</p><p> Nunc justo nibh, elementum sit amet augue ac, ullamcorper facilisis ipsum. Nulla rhoncus, risus vulputate rutrum vestibulum, nibh leo pulvinar nibh, eget dignissim libero augue id est.</p>  </div> 
+    <div>
+        <p>
+        Vestibulum venenatis vestibulum consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed consectetur velit varius lacinia ullamcorper. Curabitur luctus commodo molestie. Vestibulum in volutpat purus. Fusce nisl dolor, dignissim sodales dui eu, placerat venenatis elit. Etiam mauris sem, accumsan non nulla a, sodales interdum nunc. Etiam auctor pulvinar justo, eget ultrices tortor venenatis vel. 
+        </p>
+    </div>
+    <div>
+        <p>Nam pulvinar, orci quis dignissim venenatis, ligula tellus elementum lorem, ut porttitor tortor orci vel mi. Aenean facilisis sollicitudin dolor ut lacinia. Sed vitae auctor lorem, eget vehicula eros. Suspendisse hendrerit nunc eget posuere condimentum.</p><p> Nunc justo nibh, elementum sit amet augue ac, ullamcorper facilisis ipsum. Nulla rhoncus, risus vulputate rutrum vestibulum, nibh leo pulvinar nibh, eget dignissim libero augue id est.</p>  </div> 
+    <div>
+        <p>
+        Vestibulum venenatis vestibulum consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed consectetur velit varius lacinia ullamcorper. Curabitur luctus commodo molestie. Vestibulum in volutpat purus. Fusce nisl dolor, dignissim sodales dui eu, placerat venenatis elit. Etiam mauris sem, accumsan non nulla a, sodales interdum nunc. Etiam auctor pulvinar justo, eget ultrices tortor venenatis vel. 
+        </p>
+    </div>
+
+</section>
+ 
+</body> 
+</html> 

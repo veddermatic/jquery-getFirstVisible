@@ -2,6 +2,7 @@
 *
 * copyright 2010 David Vedder
 * Author: David Vedder
+* Released under the MIT license
 */
 
 /**

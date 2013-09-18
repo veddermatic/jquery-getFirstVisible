@@ -57,3 +57,8 @@ Watch DIVs inside things with the class 'watchMe', and add a stupid message to t
             }
        });
 
+
+Source and Examples
+----
+
+Main repo is up on [BitBucket](https://bitbucket.org/davevedder/jquery.getfirstvisible), but there is a clone up on [GitHub](https://github.com/veddermatic/jquery-getFirstVisible).
